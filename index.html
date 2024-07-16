@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Julia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>For Julia</h1>
+        <h3>This page is dedicated to my girlfriend Julia Wangechi Thaithi so if you are seeing this. You shouldn't.  FUCK OFF</h3>
+        <div>
+            <h3>Regards,</h3>
+        <h3>Her loving boyfriend, Austin😊</h3>
+        <h5 class="h5">P.S. &emsp;I added your favourite song to this. Click the red button button at the top. I hope you enjoy😁</h>
+        </div>
+    </header>
+    <main>
+        <button id="soundButton" onclick="toggleSound()">
+            <img id="soundIcon" src="Assets/sound.png" alt="Play Sound" />
+        </button>
+    
+        <audio id="song" src="Assets/GILAD ft Wendy Kimani - UNAJUA LYRICS (320).mp3"></audio>
+        <script>
+            function toggleSound() {
+                var audio = document.getElementById("song");
+    
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            }
+    
+            function showResponse(response) {
+                var audio = document.getElementById("song");
+                audio.pause();
+    
+                alert(response + " THANK U 😘❤️");
+            }
+        </script>
+        <section class="content">
+            <div class="content-block">
+                <img src="Assets/Screenshot_2024-07-17-01-13-43-895_com.google.android.apps.photos 1.jpg" alt="Julia 1">
+                <blockquote>My baby girl. Mamaa. Just look at that 😊.Seeing you smile does wonders to my heart and soul❤️</blockquote>
+            </div>
+            <div class="content-block">
+                <img src="Assets/Screenshot_2024-07-17-01-12-04-112_com.google.android.apps.photos.jpg" alt="Julia 2">
+                <blockquote>I treasure every moment with you❤️You always make me feel better and I cannot imagine my life without you❤️</blockquote>
+            </div>
+            <div class="content-block">
+                <img src="Assets/Screenshot_2024-07-17-01-19-14-483_com.google.android.apps.photos 1.jpg" alt="Julia 3">
+                <blockquote>You make my life so much better 😁. You have amazing energy that warms my soul❤️. A sharp mind and an 
+                    indomitable spirit that I really admire✊🏾. I love you to the moon and back❤️You are the best!!!</blockquote>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024, Made with love for Julia, the love of my life❤️</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
